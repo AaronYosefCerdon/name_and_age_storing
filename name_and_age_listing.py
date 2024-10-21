@@ -13,19 +13,24 @@ def valid_ages(age):
      return age.isdigit( ) and int(age) > 0
 #Start a loop that will ask the user to input a name and an age which will stop or continue if yes or no is replied.
 
+#Input a try variable to print an error message.
+
 #Ask the user to enter a name.
 
-#Using the try and except commands, validate the name input.
+#Validate the name input.
 
 #If the entry is valid, proceed. If not, ask the user to enter a name again.
 
 #Ask the user to input an age.
 
-#Using the try and except commands, validate the age input.
+#Validate the age input.
 
 #If the entry is valid, proceed. If not, ask the user to enter an age again.
 
 #Store the collected information in the list.
+
+#Input an except variable to print an error message.
+
 #Ask the user if they want to continue putting in names and ages.
 
 #Define a variable to identify the oldest age/s.
