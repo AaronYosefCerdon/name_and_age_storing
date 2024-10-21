@@ -22,12 +22,12 @@ while True:
            if not valid_names(name):
              #If the entry is valid, proceed. If not, ask the user to enter a name again.
               raise ValueError("The name you entered is invalid. Please enter a valid name.")
-#Ask the user to input an age.
-      
-#Validate the age input.
-
-#If the entry is valid, proceed. If not, ask the user to enter an age again.
-
+      #Ask the user to input an age.
+           age = input("Please enter an age: ")
+      #Validate the age input.
+           if not valid_ages(age):
+             #If the entry is valid, proceed. If not, ask the user to enter an age again.
+              raise ValueError("The age you entered is invalid. Please enter a valid age.")
 #Store the collected information in the list.
 
       #Input an except variable to print an error message.
