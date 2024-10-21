@@ -10,6 +10,7 @@ def valid_names(name):
 def valid_ages(age):
      #Define the conditions for an age to be a positive integer greater than 0.
      return age.isdigit( ) and int(age) > 0
+  
 #Start a loop that will ask the user to input a name and an age which will stop or continue if yes or no is replied.
 while True:
 
@@ -40,10 +41,17 @@ while True:
       #Enter an except command to print   an error message.                   
       except ValueError as incorrect:
              print(incorrect)
-#Use an if statement to identify the oldest age/s.
-
+        
+#Use an if statement to identify the oldest age/s in the list.
+if profiles:
 #Define a variable to identify the name/s corresponding to the oldest age/s.
-
-#Print the name/s and age/s of the oldest people entered.
-
-#Print the list of entered profiles.
+    oldest_ages = max(age for ___, age in profiles)
+    oldest_names = [name for name, age in profiles if age == oldest_ages]
+  
+#Print the name and age of the oldest person entered.
+    print("The oldest person/s is/are: ")
+    for person in oldest_names:
+     print(f"Name: {person}, Age: {oldest_ages} ")
+     
+#Print the list of profiles.
+print(profiles)
