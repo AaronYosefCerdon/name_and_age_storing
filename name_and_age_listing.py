@@ -40,10 +40,10 @@ while True:
       #Enter an except command to print   an error message.                   
       except ValueError as incorrect:
              print(incorrect)
-#Define a variable to identify the oldest age/s.
+#Use an if statement to identify the oldest age/s.
 
-#Define a variable to identify the names corresponding to the ages.
+#Define a variable to identify the name/s corresponding to the oldest age/s.
 
-#Print the name and age of the oldest person entered.
+#Print the name/s and age/s of the oldest people entered.
 
-#Use an if statement to go back to the defined list.
+#Print the list of entered profiles.
