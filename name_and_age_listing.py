@@ -12,7 +12,7 @@ def valid_ages(age):
      return age.isdigit( ) and int(age) > 0
 #Start a loop that will ask the user to input a name and an age which will stop or continue if yes or no is replied.
 while True:
-	
+
 #Input a try variable to print an error message.
       try:
       #Ask the user to enter a name.
@@ -32,8 +32,11 @@ while True:
       #Ask the user if they want to continue putting in names and ages.
 	   enter_another_profile = input("Do you want to input another profile? (Yes/No): ").strip( ).lower( )
       #Enter a condition where answering no stops the loop.
-	   if enter_another_profile != "yes":
-                  break
+	   if enter_another_profile == "no":
+                break
+      #Enter a condition where answering not yes or no prints an error message.
+           if enter_another_profile != "yes":
+               	print("Invalid. Please try again.")
       #Input an except variable to print an error message.	   
       except ValueError as incorrect:
                print(incorrect)
