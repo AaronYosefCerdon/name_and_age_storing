@@ -30,17 +30,16 @@ while True:
       #Store the collected information in the list.
            profiles.append((name, int(age)))
       #Ask the user if they want to continue putting in names and ages.
-	   enter_another_profile = input("Do you want to input another profile? (Yes/No): ").strip( ).lower( )
+           enter_another_profile = input("Do you want to input another profile? (Yes/No): ").strip( ).lower( )
       #Enter a condition where answering no stops the loop.
-	   if enter_another_profile == "no":
-                break
+           if enter_another_profile == "no" :
+               break
       #Enter a condition where answering not yes or no prints an error message.
            if enter_another_profile != "yes":
-               	print("Invalid. Please try again.")
-      #Input an except variable to print an error message.	   
+               print("Invalid. Please try again.")
+      #Enter an except command to print   an error message.                   
       except ValueError as incorrect:
-               print(incorrect)
-       
+             print(incorrect)
 #Define a variable to identify the oldest age/s.
 
 #Define a variable to identify the names corresponding to the ages.
