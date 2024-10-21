@@ -1,13 +1,16 @@
 #Initialize a list to properly store data.
-
-#Define a function for inputing a name. 
+def main ( ):
+	profiles = [ ]
   
-#Define the condition for a name to consist of only alphabet letters.
-
+#Define a function for inputing a name. 
+def valid_names(name):
+     #Define the condition for a name to consist of only alphabet letters.
+     return name.isalpha( ) and len(name) > 0
+  
 #Define a function for inputing an age.
-
-#Define the conditions for an age to be a positive integer greater than 0.
-
+def valid_ages(age):
+     #Define the conditions for an age to be a positive integer greater than 0.
+     return age.isdigit( ) and int(age) > 0
 #Start a loop that will ask the user to input a name and an age which will stop or continue if yes or no is replied.
 
 #Ask the user to enter a name.
